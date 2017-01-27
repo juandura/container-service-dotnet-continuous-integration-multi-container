@@ -13,7 +13,7 @@ namespace ServiceB
             using (var main = new CancellationTokenSource())
             using (var cts = new CancellationTokenSource())
             {
-                var token = cts.Token;
+                var token = cts.Token ;
 
                 Console.CancelKeyPress += (sender, e) => {
                     cts.Cancel();
