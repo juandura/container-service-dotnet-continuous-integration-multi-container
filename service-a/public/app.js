@@ -21,10 +21,10 @@ app.controller('MainController', function($scope, $http) {
     var colorIndex = 0;
     
     $scope.getStyle = function(message) {
-        if (!styles[message]) {
+        //if (!styles[message]) {
             styles[message] = {'color': colors[colorIndex]};
             colorIndex = colorIndex < colors.length - 1 ? colorIndex + 1 : 0;
-        }
+        //}
         return styles[message];
     }
 
